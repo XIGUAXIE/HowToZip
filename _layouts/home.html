@@ -28,9 +28,9 @@ layout: default
   <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip,<br>and then select Send to > Compressed (zipped) folder. </h3>
   <figure>
     <img src="assets\images\zip_file.webp" alt="Steps to compress files on a computer">
-    <figcaption>Step-by-step guide on how to compress files on Windows.</figcaption>
+    <figcaption>Guide on how to zip(compress) files on Windows.</figcaption>
   </figure>
-  {% endif %}
+{% endif %}
 
 {% if site.theme_config.show_blog_windows == true %}
   <h1>{{ site.theme_config.home.title_blog_windows }}</h1>
@@ -38,6 +38,7 @@ layout: default
   {% include post_list.html posts=filtered_posts %}
 {% endif %}
 
+<hr>
 
 <!-- macOS板块 -->
 <h1>Zip and Unzip Tutorials for macOS</h1>
@@ -52,17 +53,43 @@ layout: default
   <h3>Open Finder and locate the file or folder you want to compress. Right-click (or Control-click) on the file or folder, then select "Compress [file/folder name]" from the context menu. A ZIP file will be created in the same directory.</h3>
   <figure>
     <img src="assets/images/zip_file_mac.webp" alt="Steps to compress files on macOS">
-    <figcaption>Guide on how to compress files on macOS.</figcaption>
+    <figcaption>Guide on how to zip(compress) files on macOS.</figcaption>
   </figure>
 {% endif %}
 
 {% if site.theme_config.show_blog_windows == true %}
-  <h1>{{ site.theme_config.home.title_blog_windows }}</h1>
+  <h1>{{ site.theme_config.home.title_blog_macos }}</h1>
   {% assign filtered_posts = site.posts | where: "tags", "macOS" %}
   {% include post_list.html posts=filtered_posts %}
 {% endif %}
 
+<hr>
 
+<!-- Linux板块 -->
+<h1>Zip and Unzip Tutorials for Linux</h1>
+{% if site.theme_config.show_linux_title_Tools == true %}
+  <h2>{{ site.theme_config.home.title_linux_Tools }}</h2>
+  <h4>Linux distributions come with built-in command-line tools for compression and decompression tasks. Below are some of the most commonly used tools for these operations.</h4>
+  {% include card_list.html collection=site.data.home.linux_tools %}
+{% endif %}
+
+{% if site.theme_config.show_title_linux_zip_file == true %}
+  <h1>{{ site.theme_config.home.title_linux_zip_file }}</h1>
+  <h3>Open your terminal and navigate to the directory containing the file or folder you want to compress. Use the `zip` command to compress the file or folder. Here’s a basic example:</h3>
+  <pre><code>zip -r archive_name.zip folder_name/</code></pre>
+  <p>This command will create a ZIP file named `archive_name.zip` containing the contents of `folder_name`.</p>
+  <p>For more detailed options and usage of the `zip` command, please refer to the <a href="https://man7.org/linux/man-pages/man1/zip.1.html" target="_blank">official zip documentation</a>.</p>
+  <figure>
+    <img src="assets/images/zip_file_linux.webp" alt="Steps to compress files on Linux">
+  </figure>
+{% endif %}
+
+
+{% if site.theme_config.show_blog_linux == true %}
+  <h1>{{ site.theme_config.home.title_blog_linux }}</h1>
+  {% assign filtered_posts = site.posts | where: "tags", "linux" %}
+  {% include post_list.html posts=filtered_posts %}
+{% endif %}
 
 {% if site.theme_config.show_footer == true %}
   <footer>

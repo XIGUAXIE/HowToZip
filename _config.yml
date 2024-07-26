@@ -28,11 +28,13 @@ theme_config:
   # 以下按键用于创建主页布局
   show_windows_title_Tools: true # 显示压缩软件
   show_macOS_title_Tools: true # 显示压缩软件
-
+  show_linux_title_Tools: true # 显示压缩软件
   show_title_windows_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
   show_title_macOS_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
-
+  show_title_linux_zip_file: true #
   show_blog_windows: true
+  show_blog_macos: true
+  show_blog_linux: true
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
   show_misc_list: false # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
@@ -42,12 +44,17 @@ theme_config:
   home:
     title_windows_Tools: '[Windows]Top 6 Tools for Compressed Files:'
     title_mac_Tools: '[macOS]Top 3 Tools for Compressed Files:'
+    title_linux_Tools: '[macOS]Top 3 Tools for Compressed Files:'
+
     title_windows_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
     title_macOS_zip_file: 'How to Zip (Compress) Files Using macOS Built-in Tools:'
+    title_linux_zip_file: 'How to Zip (Compress) Files Using macOS Built-in Tools:'
+
     title_misc_list: Details
     title_blog: Blog
     title_blog_windows: '[Windows]How to Zip (Compress) Files Using Third-Party Software'
-    title_blog_mac: '[Windows]How to Zip (Compress) Files Using Third-Party Software'
+    title_blog_mac: '[macOS]How to Zip (Compress) Files Using Third-Party Software'
+    title_blog_linux: '[Linux]How to Zip (Compress) Files Using Third-Party Software'
     title_old_projects: Old Projects
 
 soopr:
