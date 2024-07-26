@@ -1,8 +1,8 @@
-title: How to zip and unzip files
+title: How to zip and unzip files&folder
 home_title: How2.ZIP
 author: How2.ZIP
 url: https://www.how2.zip 
-description: > # description of the site (multiple lines allowed)
+description: > # 站点描述（允许多行）
   At How2.zip, we offer comprehensive tutorials and tips to help you master file compression and decompression techniques. Whether you're looking to reduce file sizes for easier sharing or need to unpack zipped files efficiently, our step-by-step guides and expert advice will make the process simple and straightforward. Explore our resources and discover how to streamline your file management tasks with ease. 
 permalink: /:slug
 
@@ -26,16 +26,16 @@ theme_config:
   show_copyright: true # 在页脚中显示版权声明
   # 以下按键用于创建主页布局
   show_title_Tools: true # 显示压缩软件
-  show_projects: true # 将项目显示为卡片，添加在 _data/home.yml 中
+  show_title_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
-  show_misc_list: false # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
+  show_misc_list: true # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
   show_reading_time: true # 显示博文的字数和阅读时间
   show_tags: true # 在博客文章中显示标签
   # options for "home" page
   home:
-    title_Tools: Best Unzip for Windows - Top 6 Tools for Compressed Files
-    title_projects: Portfolio
+    title_Tools: Best Unzip for Windows - Top 6 Tools for Compressed Files：
+    title_zip_file: To zip (compress) files
     title_misc_list: Details
     title_blog: Blog
     title_old_projects: Old Projects

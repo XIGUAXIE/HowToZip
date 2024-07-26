@@ -17,14 +17,14 @@ layout: default
 {{ content }}
 
 {% if site.theme_config.show_title_Tools == true %}
-  <h1>Please make sure you have installed the decompression software before compressing and decompressing:</h1>
+  <h1>Please make sure you have installed compression&decompression software before compressing&decompressing files</h1>
   <h2>{{ site.theme_config.home.title_Tools }}</h2>
   {% include card_list.html collection=site.data.home.tools %}
 {% endif %}
 
-{% if site.theme_config.show_projects == true %}
-  <h2>{{ site.theme_config.home.title_projects }}</h2>
-  {% include card_list.html collection=site.data.home.project_entries %}
+{% if site.theme_config.show_title_zip_file == true %}
+  <h1>{{ site.theme_config.home.title_zip_file }}</h1>
+  <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip, and then select Send to > Compressed (zipped) folder. </h3>
 {% endif %}
 
 {% if site.theme_config.show_misc_list == true %}
