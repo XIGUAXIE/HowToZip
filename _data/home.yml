@@ -1,9 +1,9 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: blog
-    url: blog
+  - title: Archive
+    url: archive
 
   - title: website
     url: https://www.abhinav.co

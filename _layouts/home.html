@@ -66,8 +66,8 @@ layout: default
   </figure>
 {% endif %}
 
-{% if site.theme_config.show_blog_windows == true %}
-  <h1>{{ site.theme_config.home.title_blog_macos }}</h1>
+{% if site.theme_config.show_blog_macOS == true %}
+  <h1>{{ site.theme_config.home.title_blog_mac }}</h1>
   {% assign filtered_posts = site.posts | where: "tags", "macOS" %}
   {% include post_list.html posts=filtered_posts %}
 {% endif %}

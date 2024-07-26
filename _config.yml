@@ -33,7 +33,7 @@ theme_config:
   show_title_macOS_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
   show_title_linux_zip_file: true #
   show_blog_windows: true
-  show_blog_macos: true
+  show_blog_macOS: true
   show_blog_linux: true
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
@@ -58,7 +58,7 @@ theme_config:
     title_old_projects: Old Projects
 
 soopr:
-  publish_token: "" # 在 https://www.soopr.co 注册以获取您的发布令牌并个性化分享和反应选项
+  publish_token: "pt_fdabcb4cdbd8e712b5cbc7cd8b5626ca" # 在 https://www.soopr.co 注册以获取您的发布令牌并个性化分享和反应选项
 
 highlighter: rouge
 

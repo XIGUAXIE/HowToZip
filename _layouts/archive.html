@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+<header>
+  <h1>{{ site.title }}</h1>
+</header>
+
+<ul>
+  {% for post in site.posts %}
+    <li class="post-list-item">
+      <span class="home-date">
+        {{ post.date | date: site.theme_config.date_format }}»
+      </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
