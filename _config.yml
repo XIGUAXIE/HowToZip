@@ -34,7 +34,7 @@ theme_config:
   show_tags: true # 在博客文章中显示标签
   # options for "home" page
   home:
-    title_Tools: '['windows']'Top 6 Tools for Compressed Files：
+    title_Tools: '[windows]Top 6 Tools for Compressed Files：'
     title_zip_file: How to Zip (Compress) Files Using Windows Built-in Tools：
     title_misc_list: Details
     title_blog: Blog
