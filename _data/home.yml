@@ -34,6 +34,20 @@ tools:
     url: https://extractnow.com/#/home
     desc: ExtractNow is a simple and efficient file extraction utility that supports multiple compression formats such as ZIP, RAR, 7Z, and more. Its user-friendly interface allows you to quickly extract files without complex settings or configurations.
 
+mac_tools:
+  - title: Finder
+    url: https://support.apple.com/en-us/HT201236
+    desc: Finder is macOS's built-in file management tool, which includes basic compression and decompression capabilities. With Finder, users can easily create and extract ZIP files directly within the macOS environment without the need for additional software.
+
+  - title: The Unarchiver
+    url: https://theunarchiver.com/
+    desc: The Unarchiver is a free and easy-to-use file extraction utility for macOS. It supports a wide range of file formats, making it a versatile tool for decompressing archives. This tool integrates seamlessly with macOS and is a popular choice for users looking to handle various types of compressed files.
+
+  - title: Keka
+    url: https://www.keka.io/
+    desc: Keka is a powerful file compression and decompression tool for macOS. It offers a user-friendly interface and supports numerous formats, including ZIP, 7Z, RAR, and more. Keka is known for its high compression ratios and ease of use, making it a preferred choice for Mac users seeking advanced compression features.
+
+
 project_entries:
   - title: Project 1
     url: overview-post

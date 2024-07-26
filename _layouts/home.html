@@ -10,20 +10,20 @@ layout: default
 
   <h1>{{ site.home_title }}</h1>
   {% if site.theme_config.show_description == true %}
-    <h5>{{ site.description }}</h5>
+    <h4>{{ site.description }}</h4>
   {% endif %}
 </header>
 
 {{ content }}
-
-{% if site.theme_config.show_title_Tools == true %}
-  <h1>Please make sure you have installed compression and decompression software before compressing or decompressing files. If your Windows version does not include built-in compression tools, you will need to download one.</h1>
-  <h2>{{ site.theme_config.home.title_Tools }}</h2>
+<h1>Zip and Unzip Tutorials for Windows</h1>
+{% if site.theme_config.show_windows_title_Tools == true %}
+  <h2>{{ site.theme_config.home.title_windows_Tools }}</h2>
+  <h4>Please make sure you have installed compression and decompression software before compressing or decompressing files. If your Windows version does not include built-in compression tools, you will need to download one.</h4>
   {% include card_list.html collection=site.data.home.tools %}
 {% endif %}
 
-{% if site.theme_config.show_title_zip_file == true %}
-  <h1>{{ site.theme_config.home.title_zip_file }}</h1>
+{% if site.theme_config.show_title_windows_zip_file == true %}
+  <h1>{{ site.theme_config.home.title_windows_zip_file }}</h1>
   <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip,<br>and then select Send to > Compressed (zipped) folder. </h3>
   <figure>
     <img src="assets\images\zip_file.webp" alt="Steps to compress files on a computer">
@@ -31,20 +31,26 @@ layout: default
   </figure>
   {% endif %}
 
-{% if site.theme_config.show_misc_list == true %}
-  <h2>{{ site.theme_config.home.title_misc_list }}</h2>
-  {% include vertical_list.html collection=site.data.home.misc_entries %}
-{% endif %}
-
 {% if site.theme_config.show_blog_windows == true %}
   <h1>{{ site.theme_config.home.title_blog_windows }}</h1>
   {% assign filtered_posts = site.posts | where: "tags", "windows" %}
   {% include post_list.html posts=filtered_posts %}
 {% endif %}
 
-{% if site.theme_config.show_old_projects == true %}
-  <h2>{{ site.theme_config.home.title_old_projects }}</h2>
-  {% include card_list.html collection=site.data.home.old_project_entries %}
+<h1>Zip and Unzip Tutorials for macOS</h1>
+{% if site.theme_config.show_macOS_title_Tools == true %}
+  <h2>{{ site.theme_config.home.title_macOS_Tools }}</h2>
+  <h4>Please ensure that you have the necessary compression and decompression software installed before working with files. macOS includes built-in tools for basic compression and decompression, but if you need additional features, consider downloading a third-party application.</h4>
+  {% include card_list.html collection=site.data.home.mac_tools %}
+{% endif %}
+
+{% if site.theme_config.show_title_macOS_zip_file == true %}
+  <h1>{{ site.theme_config.home.title_macOS_zip_file }}</h1>
+  <h3>Open Finder and locate the file or folder you want to compress. Right-click (or Control-click) on the file or folder, then select "Compress [file/folder name]" from the context menu. A ZIP file will be created in the same directory.</h3>
+  <figure>
+    <img src="assets/images/zip_file_mac.webp" alt="Steps to compress files on macOS">
+    <figcaption>Step-by-step guide on how to compress files on macOS.</figcaption>
+  </figure>
 {% endif %}
 
 

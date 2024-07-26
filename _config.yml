@@ -3,7 +3,8 @@ home_title: How2.ZIP
 author: How2.ZIP
 url: https://www.how2.zip 
 description: > # 站点描述（允许多行）
-  At How2.zip, we offer comprehensive tutorials and tips to help you master file compression and decompression techniques. Whether you're looking to reduce file sizes for easier sharing or need to unpack zipped files efficiently, our step-by-step guides and expert advice will make the process simple and straightforward. Explore our resources and discover how to streamline your file management tasks with ease. 
+  Learn how to compress and decompress files easily with How2.ZIP. Our comprehensive guides cover popular tools like 7-Zip, WinRAR, PeaZip, Bandizip, and ExtractNow, helping you efficiently manage your files. Discover step-by-step tutorials, tips, and best practices for file compression and extraction.
+
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
@@ -25,8 +26,12 @@ theme_config:
   show_footer: true # 在首页显示页脚链接，添加在_data/home.yml中
   show_copyright: true # 在页脚中显示版权声明
   # 以下按键用于创建主页布局
-  show_title_Tools: true # 显示压缩软件
-  show_title_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
+  show_windows_title_Tools: true # 显示压缩软件
+  show_macOS_title_Tools: true # 显示压缩软件
+
+  show_title_windows_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
+  show_title_macOS_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
+
   show_blog_windows: true
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
@@ -35,11 +40,14 @@ theme_config:
   show_tags: true # 在博客文章中显示标签
   # options for "home" page
   home:
-    title_Tools: '[Windows]Top 6 Tools for Compressed Files:'
-    title_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
+    title_windows_Tools: '[Windows]Top 6 Tools for Compressed Files:'
+    title_mac_Tools: '[macOS]Top 3 Tools for Compressed Files:'
+    title_windows_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
+    title_macOS_zip_file: 'How to Zip (Compress) Files Using macOS Built-in Tools:'
     title_misc_list: Details
     title_blog: Blog
     title_blog_windows: '[Windows]How to Zip (Compress) Files Using Third-Party Software'
+    title_blog_mac: '[Windows]How to Zip (Compress) Files Using Third-Party Software'
     title_old_projects: Old Projects
 
 soopr:
