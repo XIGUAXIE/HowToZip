@@ -1,5 +1,6 @@
 title: How to zip and unzip files
-author: How2.zip
+home_title: How2.ZIP
+author: How2.ZIP
 url: https://www.how2.zip 
 description: > # description of the site (multiple lines allowed)
   At How2.zip, we offer comprehensive tutorials and tips to help you master file compression and decompression techniques. Whether you're looking to reduce file sizes for easier sharing or need to unpack zipped files efficiently, our step-by-step guides and expert advice will make the process simple and straightforward. Explore our resources and discover how to streamline your file management tasks with ease. 
@@ -15,7 +16,7 @@ favicon: "./logo.png" # relative path to site's favicon
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   appearance_toggle: true # 用户是否可以切换外观
   back_home_text: "home.." # 在帖子布局中自定义主页链接的文本
   date_format: "%Y-%m-%d" # 自定义日期格式
