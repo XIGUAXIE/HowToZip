@@ -76,12 +76,9 @@ layout: default
 {% if site.theme_config.show_title_linux_zip_file == true %}
   <h1>{{ site.theme_config.home.title_linux_zip_file }}</h1>
   <h3>Open your terminal and navigate to the directory containing the file or folder you want to compress. Use the `zip` command to compress the file or folder. Here’s a basic example:</h3>
-  <pre><code>zip -r archive_name.zip folder_name/</code></pre>
+  <pre><code>zip -r archive_name.zip file_name/</code></pre>
   <p>This command will create a ZIP file named `archive_name.zip` containing the contents of `folder_name`.</p>
-  <p>For more detailed options and usage of the `zip` command, please refer to the <a href="https://man7.org/linux/man-pages/man1/zip.1.html" target="_blank">official zip documentation</a>.</p>
-  <figure>
-    <img src="assets/images/zip_file_linux.webp" alt="Steps to compress files on Linux">
-  </figure>
+  <p>For more detailed options and usage of the `zip` command, please refer to our <a href="/how-to-use-zip-to-compress-files" target="_blank">detailed ZIP tutorial</a> or the <a href="https://man7.org/linux/man-pages/man1/zip.1.html" target="_blank">official zip documentation</a>.</p>
 {% endif %}
 
 

@@ -56,10 +56,9 @@ linux_tools:
     url: https://www.gnu.org/software/gzip/
     desc: Gzip is a popular data compression program used to compress and decompress files. It's widely used on Unix-like systems and works in combination with Tar for compressing archive files.
 
-  - title: 7-Zip
-    url: https://www.7-zip.org/download.html
-    desc: 7-Zip is an open-source file archiver that works on Linux as well. It supports numerous compression formats and is known for its high compression ratio.
-
+  - title: XZ Utils
+    url: https://tukaani.org/xz/
+    desc: XZ Utils is a set of free software for lossless data compression. It provides the `xz` command for high compression ratio and supports the `.xz` format. On Linux, you can use `xz` to compress and decompress files. It is known for its high compression efficiency and is commonly used for compressing files in Linux environments.
 
 project_entries:
   - title: Project 1
