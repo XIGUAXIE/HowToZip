@@ -24,6 +24,7 @@ theme_config:
   show_footer: true # 在首页显示页脚链接，添加在_data/home.yml中
   show_copyright: true # 在页脚中显示版权声明
   # 以下按键用于创建主页布局
+  show_title_Tools: true # 显示压缩软件
   show_projects: true # 将项目显示为卡片，添加在 _data/home.yml 中
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
@@ -32,6 +33,7 @@ theme_config:
   show_tags: true # 在博客文章中显示标签
   # options for "home" page
   home:
+    title_Tools: Best Unzip for Windows - Top 6 Tools for Compressed Files
     title_projects: Portfolio
     title_misc_list: Details
     title_blog: Blog

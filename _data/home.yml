@@ -8,6 +8,32 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
+
+tools:
+  - title: 7-Zip
+    url: https://www.7-zip.org/download.html
+    desc: 7-Zip is a popular, free file compression utility that is widely recognized for its ability to handle a variety of archive formats. This software, available exclusively for Windows users, is known for its high compression performance, making files smaller and therefore easier to share or store.
+
+  - title: WinZip
+    url: https://www.winzip.com/
+    desc: WinZip is a renowned file compression and decompression software, offering advanced features and cross-platform compatibility, including for Windows, iOS, and Mac. It stands out for its ability to integrate the cloud and its numerous additional features in its premium editions.
+
+  - title: WinRAR
+    url: https://www.win-rar.com/download.html?&L=0
+    desc: WinRAR is a powerful and widely-used file compression tool known for its high compression ratio and extensive support for various archive formats including RAR, ZIP, and more. It offers a user-friendly interface, both graphical and command-line options, and advanced features such as file encryption, repair functions, and the ability to split large archives into smaller parts.
+
+  - title: PeaZip
+    url: https://peazip.github.io/peazip-64bit.html
+    desc: PeaZip is a versatile and open-source file archiver that supports over 180 archive formats, including ZIP, RAR, and TAR. It is available for multiple platforms, including Windows, Linux, and BSD. PeaZip emphasizes security with strong encryption, two-factor authentication, and secure file deletion, while remaining a free and user-friendly option for file management.
+
+  - title: Bandizip
+    url: https://www.7-zip.org/download.html
+    desc: Bandizip is a file compression and decompression tool that stands out for its fast processing and advanced features. Suitable for Windows and Mac users, it is both powerful and easy to use, providing a reliable alternative to other compression tools.
+
+  - title: ExtractNow
+    url: https://extractnow.com/#/home
+    desc: ExtractNow is a simple and efficient file extraction utility that supports multiple compression formats such as ZIP, RAR, 7Z, and more. Its user-friendly interface allows you to quickly extract files without complex settings or configurations.
+
 project_entries:
   - title: Project 1
     url: overview-post
