@@ -1,36 +1,35 @@
-title: Moonwalk
-author: Abhinav Saxena
-url: https://www.abhinavsaxena.com/moonwalk # root address of the site
+title: How to zip and unzip files
+author: How2.zip
+url: https://www.how2.zip 
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
-
+  At How2.zip, we offer comprehensive tutorials and tips to help you master file compression and decompression techniques. Whether you're looking to reduce file sizes for easier sharing or need to unpack zipped files efficiently, our step-by-step guides and expert advice will make the process simple and straightforward. Explore our resources and discover how to streamline your file management tasks with ease. 
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
 
-twitter:
-    username: abhinav # update or delete this
-    card: summary_large_image
+# twitter:
+#     username: abhinav # update or delete this
+#     card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
-  appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
-  # following keys are using to create home layout
-  show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
-  show_reading_time: true # show number of words and reading time in the blog posts
-  show_tags: true # show tags in a blog posts
+  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance_toggle: true # 用户是否可以切换外观
+  back_home_text: "home.." # 在帖子布局中自定义主页链接的文本
+  date_format: "%Y-%m-%d" # 自定义日期格式
+  show_description: true # 显示博客描述
+  show_navbar: true # 显示水平导航栏
+  show_footer: true # 在首页显示页脚链接，添加在_data/home.yml中
+  show_copyright: true # 在页脚中显示版权声明
+  # 以下按键用于创建主页布局
+  show_projects: true # 将项目显示为卡片，添加在 _data/home.yml 中
+  show_blog: true # 显示_posts中添加的博客文章
+  show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
+  show_misc_list: false # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
+  show_reading_time: true # 显示博文的字数和阅读时间
+  show_tags: true # 在博客文章中显示标签
   # options for "home" page
   home:
     title_projects: Portfolio
@@ -39,7 +38,7 @@ theme_config:
     title_old_projects: Old Projects
 
 soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token: "" # 在 https://www.soopr.co 注册以获取您的发布令牌并个性化分享和反应选项
 
 highlighter: rouge
 
