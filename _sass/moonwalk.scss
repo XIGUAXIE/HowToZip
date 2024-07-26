@@ -228,3 +228,21 @@ figcaption {
   align-items: center;
   margin: 2em 0;
 }
+.code-block {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.code-block code {
+  font-family: Consolas, "Courier New", monospace;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.code-block pre code {
+  background-color: transparent;
+  padding: 0;
+}
