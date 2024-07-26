@@ -27,6 +27,7 @@ theme_config:
   # 以下按键用于创建主页布局
   show_title_Tools: true # 显示压缩软件
   show_title_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
+  show_blog_windows: true
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
   show_misc_list: false # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
@@ -38,6 +39,7 @@ theme_config:
     title_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
     title_misc_list: Details
     title_blog: Blog
+    title_blog_windows: How to Zip (Compress) Files Using Third-Party Software
     title_old_projects: Old Projects
 
 soopr:
