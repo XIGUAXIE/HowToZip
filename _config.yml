@@ -39,7 +39,7 @@ theme_config:
     title_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
     title_misc_list: Details
     title_blog: Blog
-    title_blog_windows: How to Zip (Compress) Files Using Third-Party Software
+    title_blog_windows: '[Windows]How to Zip (Compress) Files Using Third-Party Software'
     title_old_projects: Old Projects
 
 soopr:
