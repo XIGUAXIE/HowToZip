@@ -247,8 +247,8 @@ figcaption {
   padding: 0;
 }
 .toc {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--text);
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 4px;
