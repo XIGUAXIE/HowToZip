@@ -1,29 +1,21 @@
 /* New nav-list styles */
 ul.nav-list {
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping of items */
-  margin: 0; /* Reset margin to avoid extra spacing issues */
-  padding: 0; /* Reset padding to avoid extra spacing issues */
-  list-style: none; /* Remove default list styling */
-}
+  //justify-content: space-between;
+  margin-top: 0em;
+  margin-left: -40px;
+  flex-wrap: wrap;
 
-ul.nav-list li {
-  margin-right: 1em; /* Space between items */
-}
+  li {
+    display:inline;
+    margin-right: 1em;
+  }
 
-ul.nav-list li a {
-  text-decoration: none;
-  font-weight: normal;
-  color: #333; /* Dark text color */
-  padding: 0.5em 1em; /* Padding for better click area */
-  background-color: #f0f0f0; /* Light background */
-  border-radius: 0.5em; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-}
+  li a {
+    text-decoration: none;
+    font-weight: normal
+  }
 
-ul.nav-list li a:hover {
-  background-color: #333; /* Dark background on hover */
-  color: #fff; /* Light text on hover */
 }
 
 ul.horizontal-list {
