@@ -246,3 +246,33 @@ figcaption {
   background-color: transparent;
   padding: 0;
 }
+.toc {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.toc h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc ul li {
+  margin-bottom: 5px;
+}
+
+.toc ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.toc ul li a:hover {
+  text-decoration: underline;
+}

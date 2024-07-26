@@ -3,10 +3,10 @@ layout: default
 ---
 
 <header>
-{% if site.theme_config.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-  <div class="dashed"></div>
-{% endif %}
+  {% if site.theme_config.show_navbar == true %}
+    {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+    <div class="dashed"></div>
+  {% endif %}
 
   <h1>{{ site.home_title }}</h1>
   {% if site.theme_config.show_description == true %}
@@ -14,9 +14,18 @@ layout: default
   {% endif %}
 </header>
 
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#windows-section">Zip and Unzip Tutorials for Windows</a></li>
+    <li><a href="#macos-section">Zip and Unzip Tutorials for macOS</a></li>
+    <li><a href="#linux-section">Zip and Unzip Tutorials for Linux</a></li>
+  </ul>
+</div>
+
 {{ content }}
 <!-- Windows板块 -->
-<h1>Zip and Unzip Tutorials for Windows</h1>
+<h1 id="windows-section">Zip and Unzip Tutorials for Windows</h1>
 {% if site.theme_config.show_windows_title_Tools == true %}
   <h2>{{ site.theme_config.home.title_windows_Tools }}</h2>
   <h4>Please make sure you have installed compression and decompression software before compressing or decompressing files. If your Windows version does not include built-in compression tools, you will need to download one.</h4>
@@ -41,7 +50,7 @@ layout: default
 <hr>
 
 <!-- macOS板块 -->
-<h1>Zip and Unzip Tutorials for macOS</h1>
+<h1 id="macos-section">Zip and Unzip Tutorials for macOS</h1>
 {% if site.theme_config.show_macOS_title_Tools == true %}
   <h2>{{ site.theme_config.home.title_macOS_Tools }}</h2>
   <h4>Please ensure that you have the necessary compression and decompression software installed before working with files. macOS includes built-in tools for basic compression and decompression, but if you need additional features, consider downloading a third-party application.</h4>
@@ -66,7 +75,7 @@ layout: default
 <hr>
 
 <!-- Linux板块 -->
-<h1>Zip and Unzip Tutorials for Linux</h1>
+<h1 id="linux-section">Zip and Unzip Tutorials for Linux</h1>
 {% if site.theme_config.show_linux_title_Tools == true %}
   <h2>{{ site.theme_config.home.title_linux_Tools }}</h2>
   <h4>Linux distributions come with built-in command-line tools for compression and decompression tasks. Below are some of the most commonly used tools for these operations.</h4>
