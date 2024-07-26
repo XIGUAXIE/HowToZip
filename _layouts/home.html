@@ -15,6 +15,7 @@ layout: default
 </header>
 
 {{ content }}
+<!-- Windows板块 -->
 <h1>Zip and Unzip Tutorials for Windows</h1>
 {% if site.theme_config.show_windows_title_Tools == true %}
   <h2>{{ site.theme_config.home.title_windows_Tools }}</h2>
@@ -27,7 +28,7 @@ layout: default
   <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip,<br>and then select Send to > Compressed (zipped) folder. </h3>
   <figure>
     <img src="assets\images\zip_file.webp" alt="Steps to compress files on a computer">
-    <figcaption>Step-by-step guide on how to compress files on your computer.</figcaption>
+    <figcaption>Step-by-step guide on how to compress files on Windows.</figcaption>
   </figure>
   {% endif %}
 
@@ -37,6 +38,8 @@ layout: default
   {% include post_list.html posts=filtered_posts %}
 {% endif %}
 
+
+<!-- macOS板块 -->
 <h1>Zip and Unzip Tutorials for macOS</h1>
 {% if site.theme_config.show_macOS_title_Tools == true %}
   <h2>{{ site.theme_config.home.title_macOS_Tools }}</h2>
@@ -49,9 +52,16 @@ layout: default
   <h3>Open Finder and locate the file or folder you want to compress. Right-click (or Control-click) on the file or folder, then select "Compress [file/folder name]" from the context menu. A ZIP file will be created in the same directory.</h3>
   <figure>
     <img src="assets/images/zip_file_mac.webp" alt="Steps to compress files on macOS">
-    <figcaption>Step-by-step guide on how to compress files on macOS.</figcaption>
+    <figcaption>Guide on how to compress files on macOS.</figcaption>
   </figure>
 {% endif %}
+
+{% if site.theme_config.show_blog_windows == true %}
+  <h1>{{ site.theme_config.home.title_blog_windows }}</h1>
+  {% assign filtered_posts = site.posts | where: "tags", "macOS" %}
+  {% include post_list.html posts=filtered_posts %}
+{% endif %}
+
 
 
 {% if site.theme_config.show_footer == true %}
