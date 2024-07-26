@@ -10,7 +10,7 @@ layout: default
 
   <h1>{{ site.home_title }}</h1>
   {% if site.theme_config.show_description == true %}
-    <p>{{ site.description }}</p>
+    <h5>{{ site.description }}</h5>
   {% endif %}
 </header>
 
@@ -24,7 +24,7 @@ layout: default
 
 {% if site.theme_config.show_title_zip_file == true %}
   <h1>{{ site.theme_config.home.title_zip_file }}</h1>
-  <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip, and then select Send to > Compressed (zipped) folder. </h3>
+  <h3>In the search box on the taskbar, type file explorer, and then select it from the list of results. Right-click the file you want to zip,<br>and then select Send to > Compressed (zipped) folder. </h3>
   <figure>
     <img src="assets\images\zip_file.webp" alt="Steps to compress files on a computer">
     <figcaption>Step-by-step guide on how to compress files on your computer.</figcaption>
@@ -36,9 +36,10 @@ layout: default
   {% include vertical_list.html collection=site.data.home.misc_entries %}
 {% endif %}
 
-{% if site.theme_config.show_blog == true %}
+{% if site.theme_config.show_blog_windows == true %}
   <h2>{{ site.theme_config.home.title_blog }}</h2>
-  {% include post_list.html %}
+  {% assign filtered_posts = site.posts | where: "tags", "windows" %}
+  {% include post_list.html posts=filtered_posts %}
 {% endif %}
 
 {% if site.theme_config.show_old_projects == true %}
