@@ -1,46 +1,50 @@
 ul.horizontal-list {
   display: flex;
-  //justify-content: space-between;
-  margin-top: 0em;
-  margin-left: -40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Enable wrapping of items */
+  margin: 0; /* Reset margin to avoid extra spacing issues */
+  padding: 0; /* Reset padding to avoid extra spacing issues */
+  list-style: none; /* Remove default list styling */
+}
 
-  li {
-    display:inline;
-    margin-right: 1em;
-  }
+ul.horizontal-list li {
+  flex: 1 1 calc(33.333% - 1em); /* Adjust width to fit 3 items per row with spacing */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  margin-right: 1em; /* Space between items */
+  margin-bottom: 1em; /* Space below items */
+}
 
-  li a {
-    text-decoration: none;
-    font-weight: normal
-  }
+ul.horizontal-list li:nth-child(3n) {
+  margin-right: 0; /* Remove margin on the right of every third item */
+}
 
+ul.horizontal-list li a {
+  text-decoration: none;
+  font-weight: normal;
 }
 
 .card {
   padding: 1em;
   border: 1px var(--text) solid;
-  width: 11em;
+  width: 100%; /* Ensure card takes full width of its container */
   height: auto;
   text-align: center;
   font-size: 1em;
   align-items: center;
   background-color: var(--bg-secondary);
-  margin-bottom: 0.8em;
   border-radius: 0.5em;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
 
-  .header {
-    color: var(--links);
-  }
+.card .header {
+  color: var(--links);
+}
 
-  .body {
-    font-size: 0.8em;
-  }
+.card .body {
+  font-size: 0.8em;
+}
 
-  hr {
-    margin: 0.5em 0;
-  }
-
+.card hr {
+  margin: 0.5em 0;
 }
 
 /* Responsive cards - one column layout on small screens */
