@@ -29,7 +29,7 @@ theme_config:
   show_title_zip_file: true # 将项目显示为卡片，添加在 _data/home.yml 中
   show_blog: true # 显示_posts中添加的博客文章
   show_old_projects: true # 将旧项目显示为卡片，添加在 _data/home.yml 中
-  show_misc_list: true # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
+  show_misc_list: false # 显示杂项详细信息的通用垂直列表，添加 _data/home.yml
   show_reading_time: true # 显示博文的字数和阅读时间
   show_tags: true # 在博客文章中显示标签
   # options for "home" page
