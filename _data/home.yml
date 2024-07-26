@@ -5,10 +5,6 @@ navbar_entries:
   - title: Archive
     url: archive
 
-  - title: website
-    url: https://www.abhinav.co
-
-
 tools:
   - title: 7-Zip
     url: https://www.7-zip.org/download.html
