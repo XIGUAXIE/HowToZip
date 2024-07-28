@@ -44,7 +44,7 @@ theme_config:
   home:
     title_windows_Tools: '[Windows]Top 6 Tools for Compressed Files:'
     title_mac_Tools: '[macOS]Top 3 Tools for Compressed Files:'
-    title_linux_Tools: '[macOS]Top 3 Tools for Compressed Files:'
+    title_linux_Tools: '[Linux]Top 3 Tools for Compressed Files:'
 
     title_windows_zip_file: 'How to Zip (Compress) Files Using Windows Built-in Tools:'
     title_macOS_zip_file: 'How to Zip (Compress) Files Using macOS Built-in Tools:'
